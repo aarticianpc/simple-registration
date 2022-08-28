@@ -1,0 +1,253 @@
+html {
+    height: 100%;
+}
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    background: #e0e2ec;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #282828;
+    padding-bottom: 30px;
+}
+
+a {
+    transition: all .4s ease;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+/**
+ * Header style
+ */
+#header {
+    display: block;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 5%);
+}
+
+#header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    line-height: 1;
+}
+
+#header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#header nav ul li {
+    padding: 20px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+#header nav ul li a {
+    text-decoration: none;
+    color: #282828;
+    font-weight: bold;
+}
+#header nav ul li.logo {
+    font-size: 25px;
+    font-weight: 700;
+}
+#header nav ul li:hover a,
+#header nav ul li:focus a,
+#header nav ul li.active a,
+#header nav ul li.active:hover a,
+#header nav ul li.active:focus a {
+    color:#2759ff;
+    outline: none;
+}
+
+#header nav ul li.nav-item .nav-link {
+    font-size: 16px;
+}
+
+#header nav ul li.nav-item:hover:before,
+#header nav ul li.nav-item:focus:before,
+#header nav ul li.nav-item.active:before{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #2759ff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.login-register-box {
+    max-width: 400px;
+    margin: 5% auto;
+}
+
+/**
+ * Card Style
+ */
+.card {
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 5%);
+}
+
+.card-header {
+    padding: 15px;
+    border-bottom: 1px solid #efefef;
+}
+
+.card-title {
+    margin: 0;
+    padding: 0;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-footer {
+    padding: 15px;
+    border-top: 1px solid #efefef;
+}
+
+/**
+ * Form style
+ */
+
+.form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-control-label {
+    margin: 0 0 5px 0;
+}
+
+.form-control:focus {
+    outline: none;
+    border: 2px solid #2759ff;
+}
+
+.form-control {
+    border: 2px solid #efefef;
+    border-radius: 5px;
+    padding: 10px;
+    background: #efefef;
+    transition: all .4s ease;
+}
+
+.form-control.invalid {
+    border: 2px solid #c90303;
+}
+
+.form-control.invalid + .feedback {
+    margin: 5px 0 0 0;
+    color: #c90303;
+    font-size: 12px;
+}
+
+/**
+ * Alert style
+ */
+.alert {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.alert.alert-success {
+    background: #4ff682;
+}
+
+.alert.alert-error {
+    background: #ff9696;
+}
+
+.alert.alert-warning {
+    background: #ffe996;
+}
+
+.alert.alert-info {
+    background: #96cfff;
+}
+
+/**
+ * Button style
+ */
+
+.btn {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: all .4s ease;
+}
+
+.btn.btn-primary {
+    border: 2px solid #2759ff;
+    background: #2759ff;
+    color: #ffffff;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+    outline: none;
+    border: 2px solid #2759ff;
+    background: #ffffff;
+    color: #2759ff;
+
+}
+
+/**
+ * Footer style
+ */
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    width: 100%;
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+}
