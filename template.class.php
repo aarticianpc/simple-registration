@@ -28,7 +28,7 @@ class Template {
         } else {
             include(VIEWS_PATH.DS.'header.php');
         }
-
+        echo VIEWS_PATH.$this->_controller.DS.$this->_action.'.php';
         if(file_exists(VIEWS_PATH.$this->_controller.DS.$this->_action.'.php')) {
             include(VIEWS_PATH.$this->_controller.DS.$this->_action.'.php');
         } else {

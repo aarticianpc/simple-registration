@@ -15,7 +15,7 @@ require_once('DotENV.php');
 /**
  * Define global constants
 */
-require_once(ROOT.DS.'core'.DS.'constants.php');
+require_once(ROOT.DS.'Core'.DS.'constants.php');
 
 /**
  * define db configuration

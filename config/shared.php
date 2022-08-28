@@ -77,7 +77,7 @@ function callHook() {
     }
 
     if(empty($controller)) {
-        $controller = 'User';
+        $controller = 'user';
         $action = !empty($_SESSION['user']) ? 'dashboard' :'login';
     }
 

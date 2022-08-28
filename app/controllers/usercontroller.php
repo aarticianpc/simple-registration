@@ -57,14 +57,14 @@ class UserController extends Controller
         if(!empty($_POST)) {
             $userExistsByEmail = $this->User->select(['email' => $_POST['email']]);
             if(count($userExistsByEmail) > 0) {
-                $this->set('error', 'User exists with email!');
+                $this->set('error', 'user exists with email!');
             } else {
                 $this->User->id = null;
                 $this->User->email = $_POST['email'];
                 $this->User->password = md5($_POST['password']);
                 $this->User->created_at = date('Y-m-d H:i:s');
                 $this->User->save();
-                $this->set('success', 'User registered successfully!');
+                $this->set('success', 'user registered successfully!');
                 unset($_POST);
             }
 
